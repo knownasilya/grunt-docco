@@ -20,7 +20,7 @@ docco: {
   debug: {
     src: ['test/**/*.js'],
     options: {
-      output: 'docs/'
+      output: 'docs/test'
     }
   }
 }
@@ -31,7 +31,7 @@ docco: {
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
 
 ## Release History
-_(Nothing yet)_
+- 0.3.1: Correctly set the Docco output using options.output or file.dest and fix docco.document() invocation (up to 0.3.1 the dest will be 'docs' anyway and invocation will result in odd error)
 
 ## License
 Copyright (c) 2012 David Souther  

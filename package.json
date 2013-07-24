@@ -1,8 +1,8 @@
 {
-  "name": "grunt-docco",
-  "description": "Grunt Docco plugin.",
-  "version": "0.3.0",
-  "homepage": "https://github.com/DavidSouther/grunt-docco",
+  "name": "grunt-docco-ds",
+  "description": "Dev{eloper} Stonez fork of Grunt Docco plugin by knownasilya (https://github.com/knownasilya/grunt-docco)",
+  "version": "0.3.1",
+  "homepage": "https://github.com/devstonez/grunt-docco",
   "author": {
     "name": "David Souther",
     "email": "davidsouther@gmail.com",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/DavidSouther/grunt-docco.git"
+    "url": "git://github.com/devstonez/grunt-docco.git"
   },
   "bugs": {
-    "url": "https://github.com/DavidSouther/grunt-docco/issues"
+    "url": "https://github.com/devstonez/grunt-docco/issues"
   },
   "licenses": [
     {
@@ -37,6 +37,7 @@
     "grunt-contrib-clean": "~0.4.0"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "docco"
   ]
 }
