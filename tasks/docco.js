@@ -20,12 +20,6 @@ module.exports = function(grunt) {
 					output = options.output;
 			// log the options
 			grunt.verbose.writeflags(options, 'Options');
-			// assure the output dir exists, otherwise is created BEFORE calling docco (to avoid issue on Windows calling 'mkdir': https://github.com/jashkenas/docco/pull/181)
-			if (output && !grunt.file.isDir(output)) {
-				grunt.verbose.write('Create directory "%s"...', output);
-				grunt.file.mkdir(output);
-				grunt.verbose.ok();
-			}
 			docco.document(options, function(){
 				// done once all the file sets are processed
 				if(++fdone === flength) {
