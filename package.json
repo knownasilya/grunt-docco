@@ -1,7 +1,7 @@
 {
   "name": "grunt-docco-ds",
   "description": "Dev{eloper} Stonez fork of Grunt Docco plugin by knownasilya (https://github.com/knownasilya/grunt-docco)",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "homepage": "https://github.com/devstonez/grunt-docco",
   "author": {
     "name": "David Souther",
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "grunt": "~0.4.0",
-    "docco": "git://github.com/jashkenas/docco.git#eb1163723a0ac04b0740d57b6b8a6d3bd4e5893f"
+    "docco": "git+https://github.com/jashkenas/docco.git#eb1163723a0ac04b0740d57b6b8a6d3bd4e5893f"
   },
   "devDependencies": {
     "rimraf": "~2.0.2",
