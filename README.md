@@ -31,7 +31,8 @@ docco: {
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
 
 ## Release History
-- 0.3.1: Correctly set the Docco output using options.output or file.dest and fix docco.document() invocation (up to 0.3.1 the dest will be 'docs' anyway and invocation will result in odd error)
+- 0.3.2	[25.07.2013]: Assure the output dir exists, otherwise is created BEFORE calling docco (to avoid this [issue](https://github.com/jashkenas/docco/pull/181) on Windows calling 'mkdir')
+- 0.3.1 [24.07.2013]: Correctly set the Docco output using options.output or file.dest and fix docco.document() invocation (up to 0.3.1 the dest will be 'docs' anyway and invocation will result in odd error)
 
 ## License
 Copyright (c) 2012 David Souther  
