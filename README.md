@@ -20,7 +20,7 @@ docco: {
   debug: {
     src: ['test/**/*.js'],
     options: {
-      output: 'docs/'
+      output: 'docs/test'
     }
   }
 }
@@ -31,7 +31,10 @@ docco: {
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
 
 ## Release History
-_(Nothing yet)_
+- 0.3.4 [25.07.2013]: Use git+https protocol to avoid firewall issues for docco dependency
+- 0.3.3 [25.07.2013]: Instead of "0.6.2" bind to https://github.com/jashkenas/docco/commit/eb1163723a0ac04b0740d57b6b8a6d3bd4e5893f that fix windows integration [issue](https://github.com/jashkenas/docco/pull/181)
+- 0.3.2 [25.07.2013]: Assure the output dir exists, otherwise is created BEFORE calling docco (to avoid this [issue](https://github.com/jashkenas/docco/pull/181) on Windows calling 'mkdir')
+- 0.3.1 [24.07.2013]: Correctly set the Docco output using options.output or file.dest and fix docco.document() invocation (up to 0.3.1 the dest will be 'docs' anyway and invocation will result in odd error)
 
 ## License
 Copyright (c) 2012 David Souther  
